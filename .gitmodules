@@ -31,3 +31,6 @@
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
 	url = http://github.com/vim-scripts/ZenCoding.vim
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = http://github.com/vim-scripts/delimitMate.vim
