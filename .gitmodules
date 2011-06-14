@@ -16,3 +16,6 @@
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
 	url = http://github.com/hujunfeng/Vim-Latex
+[submodule "bundle/bufexplorer"]
+	path = bundle/bufexplorer
+	url = http://github.com/vim-scripts/bufexplorer.zip
