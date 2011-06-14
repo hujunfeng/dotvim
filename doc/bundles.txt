@@ -1,8 +1,0 @@
-*bundles* *bundles.txt*            Installed Bundles
-
-
-Last updated by vim-update-bundles on Tue Jun 14 18:01:51 +0800 2011.
-
-  PLUGIN                           VERSION                RELEASE DATE
-------------------------------------------------------------------------
-  |fugitive.vim|                   1.2                    2011-04-29
