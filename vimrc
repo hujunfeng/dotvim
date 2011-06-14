@@ -330,6 +330,8 @@ set smartcase
 
 " }}}
 
+" Plugins {{{ -------------------------------------------------------
+
 " NERDCommenter
 let NERDMenuMode = 0		" turn off the menu
 let NERDSpaceDelims = 1		" add a space after the delimiter
