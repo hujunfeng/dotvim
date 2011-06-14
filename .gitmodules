@@ -7,3 +7,6 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = http://github.com/vim-scripts/Command-T
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = http://github.com/vim-scripts/The-NERD-Commenter
