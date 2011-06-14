@@ -13,3 +13,6 @@
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = http://github.com/vim-scripts/surround.vim
+[submodule "bundle/vim-latex"]
+	path = bundle/vim-latex
+	url = http://github.com/hujunfeng/Vim-Latex
