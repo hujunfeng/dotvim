@@ -330,10 +330,6 @@ set smartcase
 
 " }}}
 
-" vimwiki
-" let g:vimwiki_list = [{'path': '~/Dropbox/Docs/vimwiki'}]	" home path
-" let g:vimwiki_menu = ''		" turn off the menu
-
 " NERDCommenter
 let NERDMenuMode = 0		" turn off the menu
 let NERDSpaceDelims = 1		" add a space after the delimiter
@@ -341,24 +337,9 @@ map <d-/> <plug>NERDCommenterToggle
 map <leader>c<space> <plug>NERDCommenterToggle
 imap <c-c> <plug>NERDCommenterInInsert
 
-" taglist
-" nnoremap <silent> ,t :TlistToggle<cr>
-" remove extra information and blank lines from the taglist window
-" let Tlist_Compact_Format = 1
-" let Tlist_Use_Right_Window = 1
-" let Tlist_Enable_Fold_Column = 0
-" let Tlist_Exit_OnlyWindow = 1
-" let Tlist_Use_SingleClick = 1    
-" let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
-
 " BufExplorer
 " nnoremap <leader>B :BufExplorer<cr>
 nmap <silent> <leader>e :BufExplorer<cr>
-
-" javacomplete
-if has("autocmd")
-	autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-endif
 
 " hexHighlight
 " Usage: highlight hex codes of format #ffffff or #fff in that color
