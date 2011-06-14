@@ -28,3 +28,6 @@
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = http://github.com/vim-scripts/unimpaired.vim
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = http://github.com/vim-scripts/ZenCoding.vim
