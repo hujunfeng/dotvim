@@ -369,6 +369,9 @@ nnoremap <silent> ,t :TagbarToggle<cr>
 let g:tagbar_autofocus = 1
 let g:tagbar_usearrows = 1
 
+" delimitMate
+imap <unique> <buffer> <C-J> <Plug>delimitMateS-Tab
+
 " }}}
 
 " vim: set ts=2 sts=2 sw=2 fdm=marker:
