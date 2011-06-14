@@ -46,8 +46,9 @@ set backspace=indent,eol,start
 
 " indent style
 set autoindent
-set cindent
-" set smartindent
+set smartindent
+" enable cindent when filetype is a C-styling language
+autocmd Filetype c,cpp,objc,java,javascript setlocal cindent
 
 " force the length of a <Tab> to be 4 spaces, instead of the default 8
 set tabstop=4
