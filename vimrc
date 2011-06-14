@@ -93,6 +93,13 @@ nmap <leader>= :call Preserve("normal gg=G")<CR>
 
 let g:loaded_matchparen=1
 
+" set whilespaces preferences based on file types
+autocmd FileType html,xhtml,xml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType json,javascript,css setlocal ts=2 sts=2 sw=2 expandtab
+
+" do not wrap lines in Quickfix window
+autocmd FileType qf setlocal nowrap
+
 " }}}
 
 " Files & Backups {{{ ---------------------------------------------
@@ -322,23 +329,6 @@ set ignorecase
 set smartcase
 
 " }}}
-
-" File Types {{{ ----------------------------------------------------
-
-if has("autocmd")
-
-	" set whilespaces preferences based on file types
-	autocmd FileType html,xhtml,xml setlocal ts=2 sts=2 sw=2 expandtab
-	autocmd FileType json,javascript,css setlocal ts=2 sts=2 sw=2 expandtab
-
-	" do not wrap lines in Quickfix window
-	autocmd FileType qf setlocal nowrap
-
-endif
-
-" }}}
-
-" Plugins {{{ -------------------------------------------------------
 
 " vimwiki
 " let g:vimwiki_list = [{'path': '~/Dropbox/Docs/vimwiki'}]	" home path
