@@ -19,3 +19,6 @@
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = http://github.com/vim-scripts/bufexplorer.zip
+[submodule "bundle/hexHighlight"]
+	path = bundle/hexHighlight
+	url = http://github.com/vim-scripts/hexHighlight.vim
