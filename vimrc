@@ -236,9 +236,6 @@ vnoremap < <<cr>gv
 nmap <space> <c-f>
 nmap <s-space> <c-b>H
 
-" quickly insert an empty line
-nmap <c-cr> o<esc>0D
-
 " copy to the system clipboard
 nmap <leader>y "*y
 vmap <leader>y "*y
@@ -247,8 +244,6 @@ vmap <leader>y "*y
 nmap <leader>p "*p
 
 " switch to next/previous buffer
-nmap <leader>] :bn<cr>
-nmap <leader>[ :bp<cr>
 nmap <c-tab> :bn<cr>
 
 " cd to the directory containing the file in the current buffer
