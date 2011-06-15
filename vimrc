@@ -261,6 +261,11 @@ nmap <leader>X :bd!<cr>
 " duplicate selected lines in visual mode
 vnoremap D y'>pgv
 
+function ExecuteCurrentLine()
+	execute getline('.')
+endfunction
+nmap <leader>. :call ExecuteCurrentLine()<cr>
+
 " }}}
 
 " External Reference {{{ --------------------------------------------
