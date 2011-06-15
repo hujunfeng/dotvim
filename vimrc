@@ -37,6 +37,10 @@ set dict+=/usr/share/dict/words
 " not been saved
 set hidden
 
+" place the cursor at the column where is was the last time the buffer
+" was edited
+set nostartofline
+
 " }}}
 
 " Formatting/Typesetting {{{ ----------------------------------------
@@ -246,6 +250,8 @@ nmap <leader>p "*p
 " switch to next/previous buffer
 nmap <c-tab> :bn<cr>
 nmap <c-s-tab> :bp<cr>
+imap <c-tab> <c-o>:bn<cr>
+imap <c-s-tab> <c-o>:bp<cr>
 
 " cd to the directory containing the file in the current buffer
 " http://www.derekwyatt.org/vim/the-vimrc-file/toggling-and-shortening/
@@ -265,6 +271,9 @@ function ExecuteCurrentLine()
 	execute getline('.')
 endfunction
 nmap <leader>. :call ExecuteCurrentLine()<cr>
+
+" don't use Ex mode, use Q for formatting
+nnoremap Q gq
 
 " }}}
 
