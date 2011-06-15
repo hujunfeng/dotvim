@@ -245,6 +245,7 @@ nmap <leader>p "*p
 
 " switch to next/previous buffer
 nmap <c-tab> :bn<cr>
+nmap <c-s-tab> :bp<cr>
 
 " cd to the directory containing the file in the current buffer
 " http://www.derekwyatt.org/vim/the-vimrc-file/toggling-and-shortening/
