@@ -372,6 +372,12 @@ let g:tagbar_usearrows = 1
 " delimitMate
 imap <unique> <buffer> <C-J> <Plug>delimitMateS-Tab
 
+" LustyExplorer
+nmap ,f :LustyFilesystemExplorer<cr>
+nmap ,r :LustyFilesystemExplorerFromHere<cr>
+nmap ,e :LustyBufferExplorer<cr>
+nmap ,g :LustyBufferGrep<cr>
+
 " }}}
 
 " vim: set ts=2 sts=2 sw=2 fdm=marker:
