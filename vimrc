@@ -149,7 +149,14 @@ nmap <silent> <leader>sp :call ToggleSpell()<CR>
 " UI {{{ -----------------------------------------------------------
 
 " always show status line
-"set laststatus=2
+set laststatus=2
+set statusline=																" reset statusline
+set statusline+=%n:														" buffer number
+set statusline+=%<%f\ %h%w%m%r								" file name and flags
+set statusline+=[%{strlen(&ft)?&ft:'none'},		" filetype
+set statusline+=%{strlen(&fenc)?&fenc:&enc},	" encoding
+set statusline+=%{&fileformat}]								" file format
+set statusline+=%=\ %l,%-7.(%c%V%)\ %P				" line number, column number and
 
 " always show current position
 set ruler
