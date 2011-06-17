@@ -26,7 +26,7 @@ map <leader>_ :edit $MYVIMRC<cr>
 map <leader>so :source $MYVIMRC<cr>
 
 " guess encoding of files along this list
-set fileencodings=utf-8,chinese,latin1
+set fileencodings=ucs-bom,utf-8,chinese,latin1
 " default encoding of buffers
 set encoding=utf-8
 
