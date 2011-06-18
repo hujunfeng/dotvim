@@ -52,7 +52,7 @@ set backspace=indent,eol,start
 set autoindent
 set smartindent
 " enable cindent when filetype is a C-styling language
-autocmd Filetype c,cpp,objc,java,javascript setlocal cindent
+autocmd! Filetype c,cpp,objc,java,javascript setlocal cindent
 
 " force the length of a <Tab> to be 4 spaces, instead of the default 8
 set tabstop=4
@@ -98,11 +98,11 @@ nmap <leader>= :call Preserve("normal gg=G")<CR>
 let g:loaded_matchparen=1
 
 " set whilespaces preferences based on file types
-autocmd FileType html,xhtml,xml setlocal ts=2 sts=2 sw=2 expandtab
-autocmd FileType json,javascript,css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd! FileType html,xhtml,xml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd! FileType json,javascript,css setlocal ts=2 sts=2 sw=2 expandtab
 
 " do not wrap lines in Quickfix window
-autocmd FileType qf setlocal nowrap
+autocmd! FileType qf setlocal nowrap
 
 " }}}
 
