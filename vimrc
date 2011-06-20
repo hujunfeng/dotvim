@@ -288,10 +288,11 @@ nmap <Leader>X :bd!<CR>
 " duplicate selected lines in visual mode
 vnoremap D y'>pgv
 
-function ExecuteCurrentLine()
+" execute current line as a Ex command
+nmap <Leader>. :call ExecuteCurrentLine()<CR>
+function! ExecuteCurrentLine()
 	execute getline('.')
 endfunction
-nmap <leader>. :call ExecuteCurrentLine()<cr>
 
 " don't use Ex mode, use Q for formatting
 nnoremap Q gq
