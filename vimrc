@@ -297,6 +297,16 @@ endfunction
 " don't use Ex mode, use Q for formatting
 nnoremap Q gq
 
+" open and close quickfix list
+nmap <Leader>co :copen<CR>
+nmap <Leader>ce :cclose<CR>
+
+" move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+nmap <C-M-n> mz:m+<CR>`z
+nmap <C-M-p> mz:m-2<CR>`z
+vmap <C-M-n> :m'>+<CR>`<my`>mzgv`yo`z
+vmap <C-M-p> :m'<-2<CR>`>my`<mzgv`yo`z
+
 " }}}
 
 " External Reference {{{ --------------------------------------------
