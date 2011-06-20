@@ -156,7 +156,16 @@ set statusline+=%<%f\ %h%w%m%r								" file name and flags
 set statusline+=[%{strlen(&ft)?&ft:'none'},		" filetype
 set statusline+=%{strlen(&fenc)?&fenc:&enc},	" encoding
 set statusline+=%{&fileformat}]								" file format
+set statusline+=%{SpellOn()}									" spell status
 set statusline+=%=\ %l,%-7.(%c%V%)\ %P				" line number, column number and
+
+function! SpellOn()
+	if &spell
+		return ' (spell)'
+	else
+		return ''
+	endif
+endfunction
 
 " always show current position
 set ruler
