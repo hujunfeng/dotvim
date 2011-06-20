@@ -22,8 +22,8 @@ set history=400
 set autoread
 
 " shortcuts to open and save .vimrc
-map <leader>_ :edit $MYVIMRC<cr>
-map <leader>so :source $MYVIMRC<cr>
+map <Leader>_ :edit $MYVIMRC<CR>
+map <Leader>so :source $MYVIMRC<CR>
 
 " guess encoding of files along this list
 set fileencodings=ucs-bom,utf-8,chinese,latin1
@@ -73,7 +73,7 @@ set textwidth=72
 
 " format the current paragraph;
 " use 'gw' instead of 'gq' to keep the cursor position
-nnoremap <silent> <leader>f gwip
+nnoremap <silent> <Leader>f gwip
 
 "set formatprg=par
 
@@ -91,9 +91,9 @@ function! Preserve(command)
 	call cursor(l, c)
 endfunction
 " remove trailling spaces
-nmap <leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
+nmap <Leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 " autoformat the entire file
-nmap <leader>= :call Preserve("normal gg=G")<CR>
+nmap <Leader>= :call Preserve("normal gg=G")<CR>
 
 let g:loaded_matchparen=1
 
@@ -109,7 +109,7 @@ autocmd! FileType qf setlocal nowrap
 " Files & Backups {{{ ---------------------------------------------
 
 " fast switching to alternative file
-" nnoremap <leader>e :e #<CR>
+" nnoremap <Leader>e :e #<CR>
 
 " ignore these files
 set wildignore=*.o,*.obj,*.bak,*.exe,*.pdf,*.jpg,*.png,*.rar,*.zip,*.tar.*
@@ -142,7 +142,7 @@ function! ToggleSpell()
 endfunction
 
 " toggle spell checking on and off
-nmap <silent> <leader>sp :call ToggleSpell()<CR>
+nmap <silent> <Leader>sp :call ToggleSpell()<CR>
 
 " }}}
 
@@ -171,16 +171,16 @@ set showcmd
 set wildmenu
 
 " toggle the line number
-nmap <silent> <leader>ln :set nu!<cr>
+nmap <silent> <Leader>ln :set nu!<CR>
 
 " toggle the invisible chars, eg. tabstops and eols
-nmap <silent> <leader>i :set list!<cr>
+nmap <silent> <Leader>i :set list!<CR>
 
 " customize the symbols for tabstops and eols
 set listchars=tab:›\ ,eol:¬,trail:-
 
 " show syntax highlighting groups for word under cursor
-nmap <c-s-p> :call <sid>SynStack()<cr>
+nmap <C-P> :call <sid>SynStack()<CR>
 function! <sid>SynStack()
 	if !exists("*synstack")
 		return
@@ -199,13 +199,13 @@ endfunc
 		" colo solarized
 	" endif
 " endfunction
-" map <F3> :call ToggleBackground()<cr>
+" map <F3> :call ToggleBackground()<CR>
 
 " increase/decrease the number of columns
-nmap <silent> <leader>> :set columns+=15 lines+=5<cr>:set columns lines<cr>
-nmap <silent> <leader>< :set columns-=15 lines-=5<cr>:set columns lines<cr>
-nmap <silent> <leader>+ :set lines+=5<cr>:set lines<cr>
-nmap <silent> <leader>- :set lines-=5<cr>:set lines<cr>
+nmap <silent> <Leader>> :set columns+=15 lines+=5<CR>:set columns lines<CR>
+nmap <silent> <Leader>< :set columns-=15 lines-=5<CR>:set columns lines<CR>
+nmap <silent> <Leader>+ :set lines+=5<CR>:set lines<CR>
+nmap <silent> <Leader>- :set lines-=5<CR>:set lines<CR>
 
 " }}}
 
@@ -224,52 +224,52 @@ nmap <silent> <leader>- :set lines-=5<cr>:set lines<cr>
 " imap <c-tab> <esc>gt
 
 " readline-like cursor movements in command mode
-cnoremap <c-a> <home>
-cnoremap <c-e> <end>
-cnoremap <c-b> <left>
-cnoremap <c-f> <right>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+cnoremap <C-b> <Left>
+cnoremap <C-f> <Right>
 
 " use shift-tab to unindent the current line in Insert mode
-imap <s-tab> <c-o><<
+imap <S-Tab> <C-o><<
 
 " use tab to switch between windows
 " nmap <tab> <c-w><c-w>
 
 " clear highlights
-nmap <leader>n :noh<cr>
+nmap <Leader>n :noh<CR>
 
 " move text, but keep highlight
 " http://www.mattrope.com/computers/conf/vimrc.html
-vnoremap > ><cr>gv
-vnoremap < <<cr>gv
+vnoremap > ><CR>gv
+vnoremap < <<CR>gv
 
 " page down, page up; H is to keep cursor at the first line
 nmap <space> <c-f>
 nmap <s-space> <c-b>H
 
 " copy to the system clipboard
-nmap <leader>y "*y
-vmap <leader>y "*y
+nmap <Leader>y "*y
+vmap <Leader>y "*y
 
 " paste from the clipboard
-nmap <leader>p "*p
+nmap <Leader>p "*p
 
 " switch to next/previous buffer
-nmap <c-tab> :bn<cr>
-nmap <c-s-tab> :bp<cr>
-imap <c-tab> <c-o>:bn<cr>
-imap <c-s-tab> <c-o>:bp<cr>
+nmap <C-Tab> :bn<CR>
+nmap <C-S-Tab> :bp<CR>
+imap <C-Tab> <C-o>:bn<CR>
+imap <C-S-Tab> <C-o>:bp<CR>
 
 " cd to the directory containing the file in the current buffer
 " http://www.derekwyatt.org/vim/the-vimrc-file/toggling-and-shortening/
-nmap <leader>cd :lcd %:h<cr>:pwd<cr>
+nmap <Leader>cd :lcd %:h<CR>:pwd<CR>
 
 " shortcut to change to playground directory
-nmap <leader>0 :cd ~/Projects/playground<cr>
+nmap <Leader>0 :cd ~/Projects/playground<CR>
 
 " shortcut to delete current buffer
-nmap <leader>x :bd<cr>
-nmap <leader>X :bd!<cr>
+nmap <Leader>x :bd<CR>
+nmap <Leader>X :bd!<CR>
 
 " duplicate selected lines in visual mode
 vnoremap D y'>pgv
@@ -296,21 +296,21 @@ function! OpenURI()
 		echo "No URI found in current line."
 	endif
 endfunction
-nmap <leader>go :call OpenURI()<CR>
+nmap <Leader>go :call OpenURI()<CR>
 
 " look for current word in help documents
 function! HelpCurrentWord()
 	let l:word_under_cursor = expand("<cword>")
 	execute "help " . l:word_under_cursor
 endfunction
-nmap <leader>hc :call HelpCurrentWord()<cr>
+nmap <Leader>hc :call HelpCurrentWord()<CR>
 
 " search Google for current word
 function! GoogleCurrentWord()
 	let l:cword = expand("<cword>")
 	execute "silent !open \"http://www.google.com/search?q=" . l:cword . "\""
 endfunction
-nmap <leader>gg :call GoogleCurrentWord()<cr>
+nmap <Leader>gg :call GoogleCurrentWord()<CR>
 
 " }}}
 
@@ -352,17 +352,16 @@ set smartcase
 " NERDCommenter
 let NERDMenuMode = 0		" turn off the menu
 let NERDSpaceDelims = 1		" add a space after the delimiter
-map <d-/> <plug>NERDCommenterToggle
-map <leader>c<space> <plug>NERDCommenterToggle
-imap <c-c> <plug>NERDCommenterInInsert
+map <D-/> <plug>NERDCommenterToggle
+imap <C-c> <plug>NERDCommenterInInsert
 
 " BufExplorer
-" nnoremap <leader>B :BufExplorer<cr>
-nmap <silent> <leader>e :BufExplorer<cr>
+" nnoremap <Leader>B :BufExplorer<CR>
+nmap <silent> <Leader>e :BufExplorer<CR>
 
 " hexHighlight
 " Usage: highlight hex codes of format #ffffff or #fff in that color
-" map <leader><F2>
+" map <Leader><F2>
 
 " Solarized colorscheme
 " use different default colorschemes for GUI and terminal
@@ -379,21 +378,21 @@ function! SCToggleBackground()
 		exe "colorscheme " . g:colors_name
 	endif
 endfunction
-nmap <leader><F3> :call SCToggleBackground()<cr>
+nmap <Leader><F3> :call SCToggleBackground()<CR>
 
 " tagbar
-nnoremap <silent> ,t :TagbarToggle<cr>
+nnoremap <silent> ,t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_usearrows = 1
 
 " delimitMate
-imap <unique> <buffer> <C-J> <Plug>delimitMateS-Tab
+imap <unique> <buffer> <C-j> <Plug>delimitMateS-Tab
 
 " LustyExplorer
-nmap ,f :LustyFilesystemExplorer<cr>
-nmap ,r :LustyFilesystemExplorerFromHere<cr>
-nmap ,e :LustyBufferExplorer<cr>
-nmap ,g :LustyBufferGrep<cr>
+nmap ,f :LustyFilesystemExplorer<CR>
+nmap ,r :LustyFilesystemExplorerFromHere<CR>
+nmap ,e :LustyBufferExplorer<CR>
+nmap ,g :LustyBufferGrep<CR>
 
 " }}}
 
