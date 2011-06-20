@@ -41,6 +41,11 @@ set hidden
 " was edited
 set nostartofline
 
+" use option (alt) as meta key.
+if has('gui_macvim')
+	set macmeta
+endif
+
 " }}}
 
 " Formatting/Typesetting {{{ ----------------------------------------
