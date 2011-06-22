@@ -157,7 +157,7 @@ nmap <silent> <Leader>sp :call ToggleSpell()<CR>
 set laststatus=2
 set statusline=																" reset statusline
 set statusline+=%n:														" buffer number
-set statusline+=%<%f\ %h%w%m%r								" file name and flags
+set statusline+=%<%f\ %m%r										" file name and flags
 set statusline+=[%{strlen(&ft)?&ft:'none'},		" filetype
 set statusline+=%{strlen(&fenc)?&fenc:&enc},	" encoding
 set statusline+=%{&fileformat}]								" file format
