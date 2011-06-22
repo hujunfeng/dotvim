@@ -191,7 +191,7 @@ nmap <silent> <Leader>ln :set nu!<CR>
 nmap <silent> <Leader>i :set list!<CR>
 
 " customize the symbols for tabstops and eols
-set listchars=tab:›\ ,eol:¬,trail:-
+set listchars=tab:›\ ,eol:¬,trail:·
 
 " show syntax highlighting groups for word under cursor
 nmap <C-P> :call <sid>SynStack()<CR>
