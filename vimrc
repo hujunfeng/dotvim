@@ -426,7 +426,7 @@ let g:tagbar_type_tex = {
 \ }
 
 " delimitMate
-imap <unique> <buffer> <C-j> <Plug>delimitMateS-Tab
+" imap <unique> <buffer> <C-j> <Plug>delimitMateS-Tab
 
 " LustyExplorer
 nmap ,f :LustyFilesystemExplorer<CR>
