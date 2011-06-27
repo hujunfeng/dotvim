@@ -412,6 +412,18 @@ nmap <Leader><F3> :call SCToggleBackground()<CR>
 nnoremap <silent> ,t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_usearrows = 1
+let g:tagbar_expand = 1
+let g:tagbar_type_tex = {
+		\ 'ctagstype' : 'latex',
+		\ 'kinds'     : [
+				\ 's:sections',
+				\ 'g:graphics',
+				\ 'l:labels',
+				\ 'r:refs:1',
+				\ 'p:pagerefs:1'
+		\ ],
+		\ 'sort'      : 0,
+\ }
 
 " delimitMate
 imap <unique> <buffer> <C-j> <Plug>delimitMateS-Tab
