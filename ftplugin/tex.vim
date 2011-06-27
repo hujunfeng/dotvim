@@ -46,6 +46,7 @@ let g:Tex_MultipleCompileFormats = 'dvi,pdf'
 "       \"\oval, \circle, or \line size unavailable\n"' 
 
 call IMAP('`3', '\epsilon', 'tex')
+call IMAP(',mc', '$\mathcal{<++>}$<++>', 'tex')
 
 " nmap <M-r> \ll
 " nmap <M-i> \ls
