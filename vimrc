@@ -149,6 +149,9 @@ endfunction
 " toggle spell checking on and off
 nmap <silent> <Leader>sp :call ToggleSpell()<CR>
 
+" correct last mistake in insert mode
+imap <C-l> <Esc>[s1z=`]a
+
 " }}}
 
 " UI {{{ -----------------------------------------------------------
