@@ -205,19 +205,6 @@ function! <sid>SynStack()
 	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
-" toggle background between dark and light, and also change colorscheme
-" correspondingly
-" function! ToggleBackground()
-	" if &background == "light"
-		" set background=dark
-		" colo solarized
-	" else
-		" set background=light
-		" colo solarized
-	" endif
-" endfunction
-" map <F3> :call ToggleBackground()<CR>
-
 " increase/decrease the number of columns
 nmap <silent> <Leader>> :set columns+=15 lines+=5<CR>:set columns lines<CR>
 nmap <silent> <Leader>< :set columns-=15 lines-=5<CR>:set columns lines<CR>
