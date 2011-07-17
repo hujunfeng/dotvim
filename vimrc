@@ -422,6 +422,9 @@ nmap ,r :LustyFilesystemExplorerFromHere<CR>
 nmap ,e :LustyBufferExplorer<CR>
 nmap ,g :LustyBufferGrep<CR>
 
+" command-t
+let g:CommandTMaxHeight = 20
+
 " }}}
 
 " vim: set ts=2 sts=2 sw=2 fdm=marker:
