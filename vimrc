@@ -385,6 +385,7 @@ let g:solarized_diffmode="high"    " default value is normal
 " let g:solarized_visibility="high"  " default value is normal
 set background=light
 silent! colorscheme solarized
+hi LineNr guifg=#d75f00 guibg=NONE ctermfg=Yellow ctermbg=NONE
 
 " Toggle background between dark and light
 function! SCToggleBackground()
