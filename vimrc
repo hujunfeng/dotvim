@@ -428,6 +428,10 @@ let g:CommandTMaxHeight = 20
 " css3 syntax
 autocmd! BufRead,BufNewFile *.css set ft=css syntax=css3
 
+" preview
+nmap ,p :Preview<CR>
+let g:PreviewMarkdownExt = 'markdown,md,mkd,mkdn,mdown,txt'
+
 " }}}
 
 " vim: set ts=2 sts=2 sw=2 fdm=marker:
