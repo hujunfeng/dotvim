@@ -62,3 +62,6 @@
 [submodule "bundle/sudo-gui"]
 	path = bundle/sudo-gui
 	url = https://github.com/mlen/sudo-gui.vim.git
+[submodule "bundle/vim-preview"]
+	path = bundle/vim-preview
+	url = https://github.com/greyblake/vim-preview.git
