@@ -425,6 +425,9 @@ nmap ,g :LustyBufferGrep<CR>
 " command-t
 let g:CommandTMaxHeight = 20
 
+" css3 syntax
+autocmd! BufRead,BufNewFile *.css set ft=css syntax=css3
+
 " }}}
 
 " vim: set ts=2 sts=2 sw=2 fdm=marker:
