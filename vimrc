@@ -23,7 +23,9 @@ set autoread
 
 " shortcuts to open and save .vimrc
 map <Leader>_ :edit $MYVIMRC<CR>
-map <Leader>so :source $MYVIMRC<CR>
+
+" source current buffer
+map <Leader>so :source %<CR>
 
 " guess encoding of files along this list
 set fileencodings=ucs-bom,utf-8,chinese,latin1
