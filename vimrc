@@ -111,6 +111,9 @@ autocmd! FileType json,javascript,css setlocal ts=2 sts=2 sw=2 expandtab
 " do not wrap lines in Quickfix window
 autocmd! FileType qf setlocal nowrap
 
+" set file type to markdown for files opened from Notational Velocity
+autocmd! BufRead /Users/hjunfeng/Library/Application\ Support/Notational\ Data/* set ft=markdown
+
 " }}}
 
 " Files & Backups {{{ ---------------------------------------------
