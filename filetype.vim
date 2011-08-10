@@ -5,7 +5,7 @@ if exists("did\_load\_filetypes")
 endif
 
 " Markdown (additional extensions)
-au! BufRead,BufNewFile *.{md,text} setfiletype markdown
+au! BufRead,BufNewFile *.text setfiletype markdown
 
 " JSON
 au! BufRead,BufNewFile *.json setfiletype json
