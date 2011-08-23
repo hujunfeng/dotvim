@@ -409,8 +409,9 @@ nmap <Leader><F3> :call SCToggleBackground()<CR>
 
 " tagbar
 nnoremap <silent> ,t :TagbarToggle<CR>
+let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 let g:tagbar_autofocus = 1
-let g:tagbar_usearrows = 1
+let g:tagbar_width = 35
 let g:tagbar_expand = 1
 let g:tagbar_type_tex = {
 		\ 'ctagstype' : 'latex',
