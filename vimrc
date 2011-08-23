@@ -305,6 +305,9 @@ nmap <C-M-p> mz:m-2<CR>`z
 vmap <C-M-n> :m'>+<CR>`<my`>mzgv`yo`z
 vmap <C-M-p> :m'<-2<CR>`>my`<mzgv`yo`z
 
+" join current line with the line above it
+nmap <Leader>J kddpkJ
+
 " }}}
 
 " External Reference {{{ --------------------------------------------
