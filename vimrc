@@ -157,6 +157,9 @@ nmap <silent> <Leader>sp :call ToggleSpell()<CR>
 " correct last mistake in insert mode
 imap <C-l> <Esc>[s1z=`]a
 
+" correct current word with the first suggestion
+nmap zs 1z=
+
 " }}}
 
 " UI {{{ -----------------------------------------------------------
