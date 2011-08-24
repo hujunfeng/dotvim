@@ -293,7 +293,8 @@ vnoremap D y'>pgv
 " execute current line as a Ex command
 nmap <Leader>. :call ExecuteCurrentLine()<CR>
 function! ExecuteCurrentLine()
-	execute getline('.')
+  execute getline('.')
+  echo ':' . getline('.')
 endfunction
 
 " don't use Ex mode, use Q for formatting
