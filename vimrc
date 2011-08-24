@@ -410,7 +410,7 @@ function! SCToggleBackground()
     exe "colorscheme " . g:colors_name
   endif
 endfunction
-nmap <Leader><F3> :call SCToggleBackground()<CR>
+nmap <Leader>bg :call SCToggleBackground()<CR>
 
 " tagbar
 nmap <silent> <Leader>tt :TagbarToggle<CR>
