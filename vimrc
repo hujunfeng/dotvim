@@ -200,7 +200,7 @@ set showcmd
 set wildmenu
 
 " toggle the line number
-nmap <silent> <Leader>ln :set nu!<CR>
+nmap <silent> ,l :set nu!<CR>
 
 " toggle the invisible chars, eg. tabstops and eols
 nmap <silent> <Leader>i :set list!<CR>
