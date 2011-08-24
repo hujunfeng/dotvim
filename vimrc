@@ -45,7 +45,7 @@ set nostartofline
 
 " use option (alt) as meta key.
 if has('gui_macvim')
-	set macmeta
+  set macmeta
 endif
 
 " }}}
@@ -87,15 +87,15 @@ nnoremap <silent> <Leader>f gwip
 " save the cursor state, execute a command and restore the cursor
 " http://vimcasts.org/episodes/tidying-whitespace/
 function! Preserve(command)
-	" Preparation: save last search, and cursor position.
-	let _s=@/
-	let l = line(".")
-	let c = col(".")
-	" Do the business:
-	execute a:command
-	" Clean up: restore previous search history, and cursor position
-	let @/=_s
-	call cursor(l, c)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  execute a:command
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
 endfunction
 " remove trailling spaces
 nmap <Leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
@@ -133,8 +133,8 @@ set dir=~/.vim/tmp/swap
 
 " enable persistent undo
 if v:version > 702
-	set undodir=~/.vim/tmp/undo
-	set undofile
+  set undodir=~/.vim/tmp/undo
+  set undofile
 endif
 
 " }}}
@@ -142,13 +142,13 @@ endif
 " Spell Checking {{{ ------------------------------------------------
 
 function! ToggleSpell()
-	if !exists("b:spell")
-		setlocal spell spelllang=en_us
-		let b:spell = 1
-	else
-		setlocal nospell
-		unlet b:spell
-	endif
+  if !exists("b:spell")
+    setlocal spell spelllang=en_us
+    let b:spell = 1
+  else
+    setlocal nospell
+    unlet b:spell
+  endif
 endfunction
 
 " toggle spell checking on and off
@@ -207,10 +207,10 @@ set listchars=tab:›\ ,eol:¬,trail:·
 " show syntax highlighting groups for word under cursor
 nmap <C-P> :call <sid>SynStack()<CR>
 function! <sid>SynStack()
-	if !exists("*synstack")
-		return
-	endif
-	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
 " increase/decrease the number of columns
@@ -314,27 +314,27 @@ nmap <Leader>J kddpkJ
 
 " look for URI under cursor and open the URI in the default browser
 function! OpenURI()
-	let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
-	echo s:uri
-	if s:uri != ""
-		exec "silent !open \"" . s:uri . "\""
-	else
-		echo "No URI found in current line."
-	endif
+  let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
+  echo s:uri
+  if s:uri != ""
+    exec "silent !open \"" . s:uri . "\""
+  else
+    echo "No URI found in current line."
+  endif
 endfunction
 nmap <Leader>go :call OpenURI()<CR>
 
 " look for current word in help documents
 function! HelpCurrentWord()
-	let l:word_under_cursor = expand("<cword>")
-	execute "help " . l:word_under_cursor
+  let l:word_under_cursor = expand("<cword>")
+  execute "help " . l:word_under_cursor
 endfunction
 nmap <Leader>hc :call HelpCurrentWord()<CR>
 
 " search Google for current word
 function! GoogleCurrentWord()
-	let l:cword = expand("<cword>")
-	execute "silent !open \"http://www.google.com/search?q=" . l:cword . "\""
+  let l:cword = expand("<cword>")
+  execute "silent !open \"http://www.google.com/search?q=" . l:cword . "\""
 endfunction
 nmap <Leader>gg :call GoogleCurrentWord()<CR>
 
@@ -376,8 +376,8 @@ set smartcase
 " Plugins {{{ -------------------------------------------------------
 
 " NERDCommenter
-let NERDMenuMode = 0		" turn off the menu
-let NERDSpaceDelims = 1		" add a space after the delimiter
+let NERDMenuMode = 0        " turn off the menu
+let NERDSpaceDelims = 1     " add a space after the delimiter
 map <D-/> <plug>NERDCommenterToggle
 imap <C-c> <plug>NERDCommenterInInsert
 
@@ -400,10 +400,10 @@ hi LineNr guifg=#d75f00 guibg=NONE ctermfg=Yellow ctermbg=NONE
 
 " Toggle background between dark and light
 function! SCToggleBackground()
-	let &background = (&background == "dark" ? "light" : "dark")
-	if exists("g:colors_name")
-		exe "colorscheme " . g:colors_name
-	endif
+  let &background = (&background == "dark" ? "light" : "dark")
+  if exists("g:colors_name")
+    exe "colorscheme " . g:colors_name
+  endif
 endfunction
 nmap <Leader><F3> :call SCToggleBackground()<CR>
 
@@ -414,15 +414,15 @@ let g:tagbar_autofocus = 1
 let g:tagbar_width = 35
 let g:tagbar_expand = 1
 let g:tagbar_type_tex = {
-		\ 'ctagstype' : 'latex',
-		\ 'kinds'     : [
-				\ 's:sections',
-				\ 'g:graphics',
-				\ 'l:labels',
-				\ 'r:refs:1',
-				\ 'p:pagerefs:1'
-		\ ],
-		\ 'sort'      : 0,
+  \ 'ctagstype' : 'latex',
+  \ 'kinds'     : [
+    \ 's:sections',
+    \ 'g:graphics',
+    \ 'l:labels',
+    \ 'r:refs:1',
+    \ 'p:pagerefs:1'
+  \ ],
+  \ 'sort'      : 0,
 \ }
 
 " delimitMate
