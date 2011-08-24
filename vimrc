@@ -449,6 +449,12 @@ let g:PreviewMarkdownExt = 'markdown,md,mkd,mkdn,mdown,txt'
 " nerdtree
 nmap <Leader>q :NERDTreeToggle<CR>
 
+" supertab
+let g:SuperTabDefaultCompletionType = "context"
+
+" javacomplete
+autocmd! Filetype java setlocal omnifunc=javacomplete#Complete 
+
 " Vim-Latex
 " Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
