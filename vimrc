@@ -122,7 +122,7 @@ autocmd! BufRead /Users/hjunfeng/Library/Application\ Support/Notational\ Data/*
 " nnoremap <Leader>e :e #<CR>
 
 " ignore these files
-set wildignore=*.o,*.obj,*.bak,*.exe,*.pdf,*.jpg,*.png,*.rar,*.zip,*.tar.*
+set wildignore=*.o,*.obj,*.bak,*.exe,*.pdf,*.jpg,*.png,*.rar,*.zip,*.tar.*,*.class,.git,.svn,*.a,*.out
 
 " enable backups
 set backup
@@ -408,7 +408,7 @@ endfunction
 nmap <Leader><F3> :call SCToggleBackground()<CR>
 
 " tagbar
-nnoremap <silent> ,t :TagbarToggle<CR>
+nmap <silent> <Leader>t :TagbarToggle<CR>
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 let g:tagbar_autofocus = 1
 let g:tagbar_width = 35
@@ -436,6 +436,8 @@ nmap ,g :LustyBufferGrep<CR>
 
 " command-t
 let g:CommandTMaxHeight = 20
+nmap <silent> ,t :CommandT<CR>
+nmap <silent> ,b :CommandTBuffer<CR>
 
 " css3 syntax
 autocmd! BufRead,BufNewFile *.css set ft=css syntax=css3
