@@ -166,21 +166,25 @@ nmap zs 1z=
 
 " always show status line
 set laststatus=2
-set statusline=																" reset statusline
-set statusline+=%n:														" buffer number
-set statusline+=%<%f\ %m%r										" file name and flags
-set statusline+=[%{strlen(&ft)?&ft:'none'},		" filetype
-set statusline+=%{strlen(&fenc)?&fenc:&enc},	" encoding
-set statusline+=%{&fileformat}]								" file format
-set statusline+=%{SpellOn()}									" spell status
-set statusline+=%=\ %l,%-7.(%c%V%)\ %P				" line number, column number and
+set statusline=                                 " reset statusline
+set statusline+=%n:                             " buffer number
+set statusline+=%<%f\ %m%r                      " file name and flags
+set statusline+=[%{strlen(&ft)?&ft:'none'},     " filetype
+set statusline+=%{strlen(&fenc)?&fenc:&enc},    " encoding
+set statusline+=%{&fileformat}]                 " file format
+set statusline+=%{SpellAndPasteStatus()}        " spell checking status
+set statusline+=%=\ %l,%-7.(%c%V%)\ %P          " line number, column number and
 
-function! SpellOn()
-	if &spell
-		return ' (spell)'
-	else
-		return ''
-	endif
+function! SpellAndPasteStatus()
+  if &spell && &paste
+    return ' (spell,paste)'
+  elseif &spell
+    return ' (spell)'
+  elseif &paste
+    return ' (paste)'
+  else
+    return ''
+  endif
 endfunction
 
 " always show current position
