@@ -281,7 +281,7 @@ imap <C-S-Tab> <C-o>:bp<CR>
 nmap <Leader>cd :lcd %:h<CR>:pwd<CR>
 
 " shortcut to change to playground directory
-nmap <Leader>0 :cd ~/Projects/playground<CR>
+nmap <Leader>0 :cd ~/Projects/playground<CR>:pwd<CR>
 
 " shortcut to delete current buffer
 nmap <Leader>x :bd<CR>
