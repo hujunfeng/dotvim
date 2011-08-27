@@ -38,9 +38,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = http://github.com/vim-scripts/Tagbar
-[submodule "bundle/snipMate"]
-	path = bundle/snipMate
-	url = http://github.com/vim-scripts/snipMate
 [submodule "bundle/syntax-gnuplot"]
 	path = bundle/syntax-gnuplot
 	url = http://github.com/vim-scripts/gnuplot.vim
