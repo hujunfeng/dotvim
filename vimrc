@@ -218,10 +218,10 @@ function! <sid>SynStack()
 endfunc
 
 " increase/decrease the number of columns
-nmap <silent> <Leader>> :set columns+=15 lines+=5<CR>:set columns lines<CR>
-nmap <silent> <Leader>< :set columns-=15 lines-=5<CR>:set columns lines<CR>
-nmap <silent> <Leader>+ :set lines+=5<CR>:set lines<CR>
-nmap <silent> <Leader>- :set lines-=5<CR>:set lines<CR>
+nmap <silent> <Leader>> :set columns+=15 lines+=5<CR>
+nmap <silent> <Leader>< :set columns-=15 lines-=5<CR>
+nmap <silent> <Leader>+ :set lines+=5<CR>
+nmap <silent> <Leader>- :set lines-=5<CR>
 
 " }}}
 
@@ -252,7 +252,7 @@ imap <S-Tab> <C-o><<
 " nmap <tab> <c-w><c-w>
 
 " clear highlights
-nmap <Leader>n :noh<CR>
+nmap ,/ :noh<CR>
 
 " move text, but keep highlight
 " http://www.mattrope.com/computers/conf/vimrc.html
@@ -341,7 +341,7 @@ function! GoogleCurrentWord()
   let l:cword = expand("<cword>")
   execute "silent !open \"http://www.google.com/search?q=" . l:cword . "\""
 endfunction
-nmap <Leader>gg :call GoogleCurrentWord()<CR>
+nmap <Leader>gc :call GoogleCurrentWord()<CR>
 
 " }}}
 
@@ -413,7 +413,7 @@ endfunction
 nmap <Leader>bg :call SCToggleBackground()<CR>
 
 " tagbar
-nmap <silent> <Leader>tt :TagbarToggle<CR>
+nmap <silent> <Leader>5 :TagbarToggle<CR>
 nmap <silent> <Leader>to :TagbarOpen<CR>
 nmap <silent> <Leader>tc :TagbarClose<CR>
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
