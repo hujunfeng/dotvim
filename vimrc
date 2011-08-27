@@ -343,6 +343,14 @@ function! GoogleCurrentWord()
 endfunction
 nmap <Leader>gc :call GoogleCurrentWord()<CR>
 
+" look up current word in Dictionary.app
+fun DefineCurrentWord()
+	let l:cword = expand("<cword>")
+	execute "silent !open dict://" . l:cword
+	echo "Look Up \"" . l:cword . "\"" 
+endf
+nmap <silent> <Leader>d :call DefineCurrentWord()<CR>
+
 " }}}
 
 " Abbreviations {{{ -------------------------------------------------
