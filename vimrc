@@ -195,6 +195,19 @@ function! SpellAndPasteStatus()
   endif
 endfunction
 
+set titlestring=%f\ •\ %{v:servername}\ •\ %{CWD()}
+
+function! CWD()
+  let l:cwd = getcwd()
+  let l:home = expand('$HOME')
+  let l:matched = match(l:cwd, l:home)
+  if l:matched == 0
+    return substitute(l:cwd, l:home, '~', '')
+  else
+    return ''
+  endif
+endfunction
+
 " always show current position
 set ruler
 
