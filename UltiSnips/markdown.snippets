@@ -1,0 +1,106 @@
+###########################################################################
+#                          SNIPPETS for MARKDOWN                          #
+###########################################################################
+
+###########################
+# Sections and Paragraphs #
+###########################
+snippet sec "Section" b
+# ${1:Section Name} #
+$0
+endsnippet
+
+snippet == "Alt style Section" b
+${1:Section Name}
+`!p
+c = '='
+snip.rv = len(t[1]) * c`
+$0
+endsnippet
+
+snippet ssec "Sub Section" b
+## ${1:Section Name} ##
+$0
+endsnippet
+
+snippet sssec "SubSub Section" b
+### ${1:Section Name} ###
+$0
+endsnippet
+
+snippet par "Paragraph" b
+#### ${1:Paragraph Name} ####
+$0
+endsnippet
+
+snippet spar "Paragraph" b
+##### ${1:Paragraph Name} #####
+$0
+endsnippet
+
+################
+# Common stuff #
+################
+snippet link "Link to something" 
+[${1:Text}](${3:http://${2:www.url.com}})$0
+endsnippet
+
+snippet img "Link to something" 
+![${1:pic alt}](${2:path}${3/.+/ "/}${3:opt title}${3/.+/"/})$0
+endsnippet
+
+snippet [] "link_id][]"
+[${1:link_id}][]$0
+endsnippet
+
+snippet [[ "[link][id]"
+[${1:link}][${2:id}]$0
+endsnippet
+
+snippet [( "[link](url)"
+[${1:link}](${2:http://www.url.com})$0
+endsnippet
+
+snippet [@ "[link](email)"
+[${1:link}](mailto:${2:email})$0
+endsnippet
+
+snippet [(" "[link](url title)"
+[${1:link}](${2:url} "${3:title}")$0
+endsnippet
+
+snippet [: "[id]: url title"
+[${1:id}]: ${2:http://www.url.com} "${3:title}"
+endsnippet
+
+snippet [:@ "[id]: email title"
+[${1:id}]: mailto:${2:url} "${3:title}"
+endsnippet
+
+snippet ![ "![alt][id]"
+![${1:alt}][${2:id}]$0
+endsnippet
+
+snippet !( "![alt](url)"
+![${1:alt}](${2:url})$0
+endsnippet
+
+snippet !(" "![alt](url title)"
+![${1:alt}](${2:url} "${3:title}")$0
+endsnippet
+
+# snippet * "*emphasis*" 
+# *${1}*$0
+# endsnippet
+# snippet _ "_emphasis_"
+# _${1}_$0
+# endsnippet
+# 
+# snippet ** "**strong**"
+# **${1}**$0
+# endsnippet
+# snippet __ "__strong__"
+# __${1}__$0
+# endsnippet
+
+# vim:ft=snippets:
