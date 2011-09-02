@@ -111,6 +111,14 @@ autocmd! FileType json,javascript,css setlocal ts=2 sts=2 sw=2 expandtab
 " do not wrap lines in Quickfix window
 autocmd! FileType qf setlocal nowrap
 
+" [style guide for Python code][1]
+"
+" - Limit all lines to a maximum of 79 characters.
+" - Use spaces over tabs for indenting.
+"
+" [1]: http://www.python.org/dev/peps/pep-0008/
+autocmd! FileType python setlocal tw=79 et
+
 " set file type to markdown for files opened from Notational Velocity
 autocmd! BufRead /Users/hjunfeng/Library/Application\ Support/Notational\ Data/* set ft=markdown
 
