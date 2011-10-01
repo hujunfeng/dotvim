@@ -497,6 +497,12 @@ autocmd! Filetype java setlocal omnifunc=javacomplete#Complete
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
 
+" Gundo
+nnoremap <F5> :GundoToggle<CR>
+let g:gundo_width = 30
+let g:gundo_preview_bottom = 1
+let g:gundo_help = 0
+
 " }}}
 
 " vim: set ts=2 sts=2 sw=2 fdm=marker:
