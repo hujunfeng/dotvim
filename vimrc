@@ -71,8 +71,9 @@ set shiftwidth=4
 set softtabstop=4
 
 " turn tabs into spaces, but still can insert hard tab by <C-v> <tab>
-set noexpandtab
+set expandtab
 
+" maximum line length is 72
 set textwidth=72
 
 " set cc=+1
@@ -105,8 +106,7 @@ nmap <Leader>= :call Preserve("normal gg=G")<CR>
 let g:loaded_matchparen=1
 
 " set whilespaces preferences based on file types
-autocmd! FileType html,xhtml,xml setlocal ts=2 sts=2 sw=2 expandtab
-autocmd! FileType json,javascript,css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd! FileType html,xhtml,xml,json,javascript,css setl ts=2 sts=2 sw=2 et
 
 " do not wrap lines in Quickfix window
 autocmd! FileType qf setlocal nowrap
@@ -221,7 +221,7 @@ set showcmd
 set wildmenu
 
 " toggle the line number
-nmap <silent> ,l :set nu!<CR>
+nmap <silent> ,l :setlocal nu!<CR>
 
 " toggle the invisible chars, eg. tabstops and eols
 nmap <silent> <Leader>i :set list!<CR>
@@ -334,6 +334,10 @@ vmap <C-M-p> :m'<-2<CR>`>my`<mzgv`yo`z
 " join current line with the line above it
 nmap <Leader>J kddpkJ
 
+" move cursor in Insert mode using Emacs key binding
+imap <C-b> <Left>
+imap <C-f> <Right>
+
 " }}}
 
 " External Reference {{{ --------------------------------------------
@@ -371,6 +375,8 @@ fun DefineCurrentWord()
 	echo "Look Up \"" . l:cword . "\"" 
 endf
 nmap <silent> <Leader>d :call DefineCurrentWord()<CR>
+
+nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
 " }}}
 
@@ -425,6 +431,7 @@ nmap <silent> <Leader>e :BufExplorer<CR>
 
 " Solarized colorscheme
 " use different default colorschemes for GUI and terminal
+let g:solarized_menu=0
 let g:solarized_contrast="high"    " default value is normal
 let g:solarized_diffmode="high"    " default value is normal
 " let g:solarized_visibility="high"  " default value is normal
@@ -463,6 +470,7 @@ let g:tagbar_type_tex = {
 
 " delimitMate
 " imap <unique> <buffer> <C-j> <Plug>delimitMateS-Tab
+let loaded_delimitMate = 1 " disable delimitMate 
 
 " LustyExplorer
 nmap ,f :LustyFilesystemExplorer<CR>
@@ -496,6 +504,8 @@ autocmd! Filetype java setlocal omnifunc=javacomplete#Complete
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+imap <D-j> <Plug>IMAP_JumpForward
+imap <D-J> <Plug>IMAP_JumpBack
 
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
