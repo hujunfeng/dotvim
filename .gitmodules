@@ -92,3 +92,6 @@
 [submodule "bundle/vim-mac-classic-theme"]
 	path = bundle/vim-mac-classic-theme
 	url = https://github.com/nelstrom/vim-mac-classic-theme.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = git://github.com/vim-scripts/UltiSnips.git
