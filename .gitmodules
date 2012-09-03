@@ -126,3 +126,7 @@
 	path = bundle/ultisnips
 	url = git://github.com/vim-scripts/UltiSnips.git
 	ignore = untracked
+[submodule "bundle/vim-fswitch"]
+	path = bundle/vim-fswitch
+	url = git://github.com/derekwyatt/vim-fswitch.git
+	ignore = untracked
