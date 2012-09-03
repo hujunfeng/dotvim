@@ -1,6 +1,6 @@
 set guioptions=egmt     " remove toolbar and scrollbar
 
-set guifont=Monaco:h16
+set guifont=Menlo:h13
 
 set lines=35            " default height of GUI window
 
@@ -13,4 +13,4 @@ set columns=90          " default width of GUI window
 " toggle the right scrollbar
 " nnoremap <silent> <leader>rs :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
 
-set fuoptions=maxvert
+set fuoptions=maxvert,maxhorz
