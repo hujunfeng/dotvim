@@ -1,9 +1,11 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = http://github.com/altercation/vim-colors-solarized
+	ignore = untracked
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/vim-scripts/fugitive.vim
+	ignore = untracked
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = http://github.com/vim-scripts/Command-T
@@ -11,87 +13,116 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = http://github.com/vim-scripts/The-NERD-Commenter
+	ignore = untracked
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = http://github.com/vim-scripts/surround.vim
+	ignore = untracked
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
 	url = http://github.com/hujunfeng/Vim-Latex
+	ignore = untracked
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = http://github.com/vim-scripts/bufexplorer.zip
+	ignore = untracked
 [submodule "bundle/hexHighlight"]
 	path = bundle/hexHighlight
 	url = http://github.com/vim-scripts/hexHighlight.vim
+	ignore = untracked
 [submodule "bundle/taskpaper"]
 	path = bundle/taskpaper
 	url = http://github.com/vim-scripts/taskpaper.vim
+	ignore = untracked
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = http://github.com/vim-scripts/unimpaired.vim
+	ignore = untracked
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
 	url = http://github.com/vim-scripts/ZenCoding.vim
+	ignore = untracked
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = http://github.com/vim-scripts/delimitMate.vim
+	ignore = untracked
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = http://github.com/vim-scripts/Tagbar
+	ignore = untracked
 [submodule "bundle/syntax-gnuplot"]
 	path = bundle/syntax-gnuplot
 	url = http://github.com/vim-scripts/gnuplot.vim
+	ignore = untracked
 [submodule "bundle/css3"]
 	path = bundle/css3
 	url = http://github.com/vim-scripts/css3
+	ignore = untracked
 [submodule "bundle/go"]
 	path = bundle/go
 	url = http://github.com/vim-scripts/go.vim
+	ignore = untracked
 [submodule "bundle/json"]
 	path = bundle/json
 	url = http://github.com/vim-scripts/JSON.vim
+	ignore = untracked
 [submodule "bundle/lustyexplorer"]
 	path = bundle/lustyexplorer
 	url = https://github.com/vim-scripts/LustyExplorer.git
+	ignore = untracked
 [submodule "bundle/vim-preview"]
 	path = bundle/vim-preview
 	url = https://github.com/greyblake/vim-preview.git
+	ignore = untracked
 [submodule "bundle/vimoutliner"]
 	path = bundle/vimoutliner
 	url = https://github.com/vimoutliner/vimoutliner.git
+	ignore = untracked
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
+	ignore = untracked
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/vim-scripts/Markdown.git
+	ignore = untracked
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/vim-scripts/SuperTab-continued..git
+	ignore = untracked
 [submodule "bundle/javacomplete"]
 	path = bundle/javacomplete
 	url = https://github.com/vim-scripts/javacomplete.git
+	ignore = untracked
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
+	ignore = untracked
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
+	ignore = untracked
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
+	ignore = untracked
 [submodule "bundle/vim-script-runner"]
 	path = bundle/vim-script-runner
 	url = https://github.com/ironcamel/vim-script-runner.git
+	ignore = untracked
 [submodule "bundle/badwolf"]
 	path = bundle/badwolf
 	url = https://github.com/sjl/badwolf.git
+	ignore = untracked
 [submodule "bundle/Hemisu"]
 	path = bundle/Hemisu
 	url = https://github.com/noahfrederick/Hemisu.git
+	ignore = untracked
 [submodule "bundle/vim-mac-classic-theme"]
 	path = bundle/vim-mac-classic-theme
 	url = https://github.com/nelstrom/vim-mac-classic-theme.git
+	ignore = untracked
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = git://github.com/vim-scripts/UltiSnips.git
+	ignore = untracked
