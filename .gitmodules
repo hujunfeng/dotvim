@@ -74,9 +74,6 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
-[submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
-	url = https://github.com/rygwdn/ultisnips.git
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
