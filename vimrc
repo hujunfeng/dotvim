@@ -431,14 +431,14 @@ nmap <silent> <Leader>e :BufExplorer<CR>
 
 " Solarized colorscheme
 " use different default colorschemes for GUI and terminal
-" let g:solarized_menu=0
-" let g:solarized_contrast="high"    " default value is normal
-" let g:solarized_diffmode="high"    " default value is normal
-" let g:solarized_visibility="high"  " default value is normal
-" let g:solarized_italic=0          " disable italic font
-" set background=dark
-" silent! colorscheme solarized
-" hi LineNr guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE
+let g:solarized_menu=0
+let g:solarized_contrast="high"    " default value is normal
+let g:solarized_diffmode="high"    " default value is normal
+let g:solarized_visibility="high"  " default value is normal
+let g:solarized_italic=0          " disable italic font
+set background=dark
+silent! colorscheme solarized
+hi LineNr guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE
 
 " Toggle background between dark and light
 function! SCToggleBackground()
