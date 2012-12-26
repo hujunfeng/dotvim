@@ -1,6 +1,6 @@
 set guioptions=egmt     " remove toolbar and scrollbar
 
-set guifont=Menlo:h13
+set guifont=Inconsolata-dz:h13
 
 set lines=35            " default height of GUI window
 
