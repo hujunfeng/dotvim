@@ -106,7 +106,7 @@ nmap <Leader>= :call Preserve("normal gg=G")<CR>
 let g:loaded_matchparen=1
 
 " set whilespaces preferences based on file types
-autocmd! FileType html,xhtml,xml,json,javascript,css setl ts=2 sts=2 sw=2 et
+autocmd! FileType html,xhtml,xml,json,javascript,css,ruby setl ts=2 sts=2 sw=2 et
 
 " do not wrap lines in Quickfix window
 autocmd! FileType qf setlocal nowrap
