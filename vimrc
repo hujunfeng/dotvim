@@ -514,6 +514,13 @@ let g:gundo_width = 30
 let g:gundo_preview_bottom = 1
 let g:gundo_help = 0
 
+" fswitch
+nmap <silent> <Leader>of :FSHere<cr>
+nmap <silent> <Leader>ol :FSRight<cr>
+nmap <silent> <Leader>oL :FSSplitRight<cr>
+nmap <silent> <Leader>oh :FSLeft<cr>
+nmap <silent> <Leader>oH :FSSplitLeft<cr>
+
 " }}}
 
 " vim: set ts=2 sts=2 sw=2 fdm=marker:
